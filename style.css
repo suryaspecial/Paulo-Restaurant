@@ -145,7 +145,8 @@ h1,h2,h3{
   font-weight:500;
   position:relative;
   padding-bottom:3px;
-}/*
+}
+/*
 .nav-link-item::after{
   content:"";
   position:absolute;
@@ -183,6 +184,9 @@ h1,h2,h3{
   border:none;
   cursor:pointer;
   padding: 6px;
+  position: relative;   /* add */
+  z-index: 60;          /* add: must be higher than the panel's z-index */
+
 }
 .pr-nav-toggle span{
   width: 24px;
